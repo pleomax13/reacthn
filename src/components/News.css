@@ -1,0 +1,27 @@
+.page {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all ease-in-out .1s;
+}
+
+.page-active{
+    color: rgb(119, 119, 119);
+    font-weight: 400;
+    pointer-events: none;
+}
+
+/*.page:hover{
+    background-color: rgb(206, 206, 206);
+}*/
+
+.loading {
+text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

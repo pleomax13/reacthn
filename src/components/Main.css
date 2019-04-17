@@ -1,0 +1,11 @@
+.Main {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 30px;
+}
+
+@media (max-width: 480px) {
+    .Main {
+        padding-top: 60px;
+    }
+}

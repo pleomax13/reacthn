@@ -1,0 +1,16 @@
+.Top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
+    opacity: 0;
+    transition: opacity ease-in-out .1s;
+}
+
+.back-to-top-show {
+    opacity: .4;
+}
+
+.Top:hover {
+    opacity: .8;
+}

@@ -1,0 +1,48 @@
+.comment-user {
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.comment-user:hover,
+.comment-button-hide:hover {
+    text-decoration: underline;
+}
+
+.comment-time,
+.comment-button-hide,
+.comment-user {
+    font-size: 15px;
+    color: rgb(68, 68, 68);
+}
+
+.comment-header {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-button-hide {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.comment-text,
+.comment-text p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.comments-tree-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    align-self: center;
+}
+
+.comment-time {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}

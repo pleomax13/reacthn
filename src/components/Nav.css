@@ -1,0 +1,64 @@
+.Nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.Nav > a:first-of-type{
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+.Nav .active {
+    text-decoration: underline;
+}
+
+.Nav {
+    background-color: rgb(22, 22, 22);
+    height: 30px;
+    line-height: 30px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 111px 1fr; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.Nav::before {
+    content: '';
+    background-color: rgb(22, 22, 22);
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+}
+
+
+.disabled {
+    pointer-events: none;
+}
+
+.nav-separator {
+    color: white;
+    border-right: 1px solid white; 
+}
+
+@media (max-width: 480px) {
+    .Nav {
+        height: 60px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-second {
+        font-size: 14px;
+    }
+
+    .nav-separator:first-of-type {
+        display: none;
+    } 
+}
