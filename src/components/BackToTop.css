@@ -5,10 +5,12 @@
     z-index: 9999999;
     opacity: 0;
     transition: opacity ease-in-out .1s;
+    pointer-events: none;
 }
 
 .back-to-top-show {
     opacity: .4;
+    pointer-events: all;
 }
 
 .Top:hover {
