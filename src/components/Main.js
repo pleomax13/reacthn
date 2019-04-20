@@ -5,7 +5,7 @@ import './Main.css';
 
 class Main extends React.Component {
     componentDidMount () {
-        console.log(window.location.pathname)
+        //console.log(window.location.pathname)
         if (window.location.pathname === '/reacthn/') {
             window.location = '/reacthn/news/1';
         }

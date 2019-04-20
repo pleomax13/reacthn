@@ -65,13 +65,13 @@ class News extends React.Component {
             for (let i = 0; i < links.length; i++) {
                 links[i].classList.add('disabled');
             }
-            console.log('disabled')
+            //console.log('disabled')
         } 
         else {
             for (let i = 0; i < links.length; i++) {
                 links[i].classList.remove('disabled');
             }
-            console.log('active')
+            //console.log('active')
         }
     }
 
@@ -94,7 +94,7 @@ class News extends React.Component {
             }
             else if (currPage) {
                 this.news(JSON.parse(xhr.responseText), currPage)
-                console.log(22222222)
+                //console.log(22222222)
             } 
             else {
                 let location = window.location.pathname.split('/').slice(-1)[0];
@@ -104,13 +104,13 @@ class News extends React.Component {
                 this.setState({
                     length: arr.length
                 })
-                console.log(arr)
+                //console.log(arr)
             }
         }}
     }
 
     componentDidUpdate() {
-        console.log(`update: ${++this._update}`)
+        //console.log(`update: ${++this._update}`)
         this.disableLinks();
         const location = window.location.pathname.split('/').slice(-2)[0];
         //console.log(location)
@@ -163,7 +163,7 @@ class News extends React.Component {
             stop: false,
             getMore: currPage ?  currPage : location
         })
-        console.log(11111111)
+        //console.log(11111111)
        //const maxLength = currPage ? ((this.state.getMore) - this.maxNewsOnPage) : (this.maxNewsOnPage)
        const maxLength = currPage ? currPage : location
        let number = 0;
@@ -198,7 +198,7 @@ class News extends React.Component {
     }
 
     loadError(xhr) {
-        console.log(xhr.status, xhr.statusText)
+        //console.log(xhr.status, xhr.statusText)
         this.setState({
             loading: <div className = 'loading' >{`${xhr.status} ${xhr.statusText}. Please try againe later or refresh page`}</div>
         });
@@ -248,7 +248,7 @@ class News extends React.Component {
                 userId: param,
                 renderCom: false
             })
-            console.log('user')
+            //console.log('user')
         } 
         else if (Array.isArray(param)) {
                 this.setState({
@@ -257,14 +257,14 @@ class News extends React.Component {
                     newsItemId: id,
                     currItem: item
                 })
-                console.log(11111)
+                //console.log(11111)
             }
             else {
                 this.setState({
                     renderUser: false,
                     renderCom: false
                 })
-                console.log(33333333)
+                //console.log(33333333)
             }
     }
 

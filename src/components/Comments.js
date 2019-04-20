@@ -90,7 +90,7 @@ class Comments extends React.Component {
     }
 
     loadError(xhr) {
-        console.log(xhr.status, xhr.statusText)
+        //console.log(xhr.status, xhr.statusText)
         this.setState({
             loading: <div className = 'loading' >{`${xhr.status} ${xhr.statusText}. Please try againe later or refresh page`}</div>
         });

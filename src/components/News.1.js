@@ -39,7 +39,7 @@ class News extends React.Component {
             if (xhr.readyState !== 4) return;
 
             if (xhr.status !== 200) {
-                console.log(xhr.status)
+                //console.log(xhr.status)
             }
             else if (prev) {
                 this.news(JSON.parse(xhr.responseText), prev)
@@ -51,7 +51,7 @@ class News extends React.Component {
     }
 
     componentDidUpdate() {
-        console.log('update')
+        //console.log('update')
     }
 
     news(newsArrayId, prev) {
@@ -84,7 +84,7 @@ class News extends React.Component {
             if (xhr.readyState !== 4) return;
 
             if (xhr.status !== 200) {
-                console.log(xhr.status)
+                //console.log(xhr.status)
             }
             else {              
                 this.arr[number] = JSON.parse(xhr.responseText);

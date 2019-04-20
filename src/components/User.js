@@ -23,7 +23,7 @@ class User extends React.Component {
     }
 
     loadError(xhr) {
-        console.log(xhr.status, xhr.statusText)
+        //console.log(xhr.status, xhr.statusText)
         this.setState({
             loading: <div className = 'loading' >{`${xhr.status} ${xhr.statusText}. Please try againe later or refresh page`}</div>
         });
@@ -44,7 +44,7 @@ class User extends React.Component {
             }
             else {
                 const user = JSON.parse(xhr.responseText);
-                console.log(user)
+                //console.log(user)
                 if (this._isMounted && user) {
                     this.setState({
                         about: user.about ? parce(user.about) : null,
